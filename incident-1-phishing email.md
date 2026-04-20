@@ -16,4 +16,4 @@ The email appeared to be sent from an internal member of Sullivan & Cromwells le
 ### Identified Indicators
 1. The sender email address mimics the legitimate Sullivan & Cromwell one, but there is a slight variation in the domain , with "Sullivan" instead being spelt as "sullivam" in the malicious email.
 2. The email contains grammatical errors ,  such as the use of the word "advise" instead of "advised" and the absence of a fullstop at the end of the email body.
-3. 
+3. The email evokes a sense of urgency in the reader, prompting them to settle the imvoice as soon as possible when they would have otherwise followed protocol and gotten the necesssary approval first
