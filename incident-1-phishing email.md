@@ -72,3 +72,29 @@ The alert involves a spoofed domain impersonating a trusted legal entity, combin
 
 **Justification**:
 This alert is prioritised as high due to the potential for direct financial loss and the likelihood of bypassing traditional technical controls. The attack leverages trust and business processes, increasing the probability of user interaction.
+
+## 8. Recommended Response Actions
+
+- Do not process the invoice request
+- Contact Sullivan & Cromwell using verified contact details to confirm legitimacy
+- Notify internal security teams of the suspected BEC attempt
+- Alert finance and accounts teams to prevent similar incidents
+- Block or flag the spoofed domain if confirmed malicious
+- Monitor for similar phishing emails targeting the organisation
+
+## 9. Phishing Simulation Approach
+
+To reduce the risk of similar BEC attacks, a targeted phishing simulation could be conducted focusing on employees involved in financial processes.
+
+The simulation would:
+- Send controlled invoice-themed phishing emails to selected users
+- Replicate real-world tactics such as domain spoofing and urgency
+- Encourage users to report suspicious emails through official channels
+
+Key Metrics:
+- Reporting rate (how many users report the email)
+- Response rate (how many users engage with the request)
+- Time taken to report the email
+
+Outcome:
+The results would be used to identify high-risk users and improve targeted security awareness training, particularly within finance-related roles.
