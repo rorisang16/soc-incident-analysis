@@ -86,15 +86,15 @@ This alert is prioritised as high due to the potential for direct financial loss
 
 To reduce the risk of similar BEC attacks, a targeted phishing simulation could be conducted focusing on employees involved in financial processes.
 
-The simulation would:
+**The simulation would:**
 - Send controlled invoice-themed phishing emails to selected users
 - Replicate real-world tactics such as domain spoofing and urgency
 - Encourage users to report suspicious emails through official channels
 
-Key Metrics:
+**Key Metrics:**
 - Reporting rate (how many users report the email)
 - Response rate (how many users engage with the request)
 - Time taken to report the email
 
-Outcome:
+**Outcome:**
 The results would be used to identify high-risk users and improve targeted security awareness training, particularly within finance-related roles.
