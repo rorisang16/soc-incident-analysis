@@ -5,7 +5,7 @@
 
 ## 1. Scenario 
 
-A phishing email was analysed , in which the threat vector impersonates an attorney from Sullivan & Cromwell 
+A phishing email was analysed in which the attacker impersonates an attorney from Sullivan & Cromwell.
 
 ## 2. Email summary 
 
@@ -30,9 +30,45 @@ These indicators collectively suggest a business email compromise (BEC) style ph
 - Sender email and domain structure
 - Email content , including tone and language used
 - Invoice request details and context
+- Domain similiarity to known organisation
 
 The analysis focused on identifying inconsistencies between the sender identity and expected communication patterns, as well as indicators of social engineering.
 
+## 6. Diamond Model Analysis
+  <img width="476" height="390" alt="Diamond Model of Intrusion Analysis scenario 1" src="https://github.com/user-attachments/assets/11d6cf05-28fe-45ae-9f3d-93513be233e5" />
+Figure 1: Diamond Model representation of the analysed BEC phishing incident, illustrating the relationship between the adversary, capability, infrastructure, and victim.
 
+The components of the model are detailed below in the context of the analysed incident:
 
+### Adversary
+The adversary is an external attacker impersonating a legal representative from Sullivan & Cromwell. The attacker is likely financially motivated and is using social engineering techniques rather than technical exploitation.
 
+### Infrastructure
+The infrastructure used in this attack is a spoofed email domain (“sullivamncromwell.com”), designed to closely resemble the legitimate organisation’s domain in order to establish credibility and evade detection.
+
+### Capability
+The attacker’s capability is Business Email Compromise (BEC), specifically using social engineering to request fraudulent invoice payments. This includes impersonation, urgency, and exploitation of business processes.
+
+### Victim
+The intended victim is an employee responsible for financial processing or invoice handling. The attacker targets this role due to their ability to authorise or process payments.
+
+This analysis highlights how the attacker leverages trust and organisational workflows, rather than malware, to achieve their objective.
+
+## 7. SOC Triage Output
+
+**Alert Type**: Business Email Compromise (BEC) – Invoice Fraud  
+**Category**: Phishing / Social Engineering  
+**Severity**: High  
+**Priority**: High  
+
+**Analysis Summary**:
+The alert involves a spoofed domain impersonating a trusted legal entity, combined with urgency to trigger an unauthorised financial transaction. No malicious links or attachments are present, indicating a BEC-style attack focused on process exploitation.
+
+**Recommended Actio**n:
+- Escalate to security and finance teams
+- Do not process the invoice request
+- Verify the request using trusted communication channels
+- Flag or block the sender domain if confirmed malicious
+
+**Justification**:
+This alert is prioritised as high due to the potential for direct financial loss and the likelihood of bypassing traditional technical controls. The attack leverages trust and business processes, increasing the probability of user interaction.
